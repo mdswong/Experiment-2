@@ -1,0 +1,34 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+
+{
+	int a=0, b=1, c;
+	
+	cout << "Fibonacci numbers: " << endl;
+	
+	for(c=1; c<=10946; c++)
+	{
+		if (c==1)
+		   cout << a << ", ";
+        
+	    if (c==2)
+	       cout << b << ", ";
+	    
+	    c = a+b;
+	    a = b;
+	    b = c;
+	    
+		if (c<10946)
+		   cout << c << ", ";
+		else	 
+ 	       cout << c;
+	}
+	
+	_getch();
+	return 0;
+	
+}
